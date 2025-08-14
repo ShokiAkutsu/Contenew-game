@@ -37,4 +37,6 @@ public class PlayerController : MonoBehaviour
 	{
 		_rb.velocity = new Vector2(_horizontal * _moveSpeed, _rb.velocity.y);
 	}
+
+
 }

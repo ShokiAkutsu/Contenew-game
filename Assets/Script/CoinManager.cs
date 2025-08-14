@@ -4,18 +4,11 @@ using UnityEngine;
 
 public class CoinManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	[Header("コインの枚数・価値")]
+	[SerializeField] int _value = 1;
+	public int Value => _value;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+	/*
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if(collision.tag == "Player")
@@ -23,4 +16,5 @@ public class CoinManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 	}
+	*/
 }
