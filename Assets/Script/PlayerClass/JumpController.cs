@@ -5,6 +5,7 @@ using UnityEngine;
 public class JumpController : MonoBehaviour
 {
 	[SerializeField] float _jumpForce = 3f;
+	[SerializeField] InputJumpSetting _inputSetting;
 	Rigidbody2D _rb;
 
 	bool _isGround = false;
@@ -13,13 +14,13 @@ public class JumpController : MonoBehaviour
 	void Start()
 	{
 		_rb = GetComponent<Rigidbody2D>();
+		//_inputSetting = new InputJumpSetting();
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		//‚È‚º‚©Jump‚ªŽg‚¦‚È‚¢‚½‚ß
-		if (Input.GetKeyDown(KeyCode.W) && _isGround)
+		if (Input.GetKeyDown(_inputSetting.Jump) && _isGround)
 		{
 			_rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
 		}
