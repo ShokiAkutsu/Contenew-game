@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CoinTextManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+	[SerializeField] Text _player1Text;
+	[SerializeField] Text _player2Text;
+
+	// Start is called before the first frame update
+	void Start()
     {
-        
+		//UIÇÃèâä˙âª
+		UpdateUI(PlayerID.Player_1P, 0);
+		UpdateUI(PlayerID.Player_2P, 0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateUI(PlayerID playerID, int Value)
     {
-        
-    }
+		if (playerID == PlayerID.Player_1P)
+		{
+			if (_player1Text != null)
+			{
+				_player1Text.text = "Player 1: " + Value;
+			}
+		}
+		else if (playerID == PlayerID.Player_2P)
+		{
+			if (_player2Text != null)
+			{
+				_player2Text.text = "Player 2: " + Value;
+			}
+		}
+		else
+		{
+			Debug.Log("ê›íËÇ≥ÇÍÇƒÇ¢Ç»Ç¢IDÇ™ì¸óÕÇ≥ÇÍÇ‹ÇµÇΩÅI");
+		}
+	}
 }

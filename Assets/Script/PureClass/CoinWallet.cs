@@ -7,11 +7,13 @@ using UnityEngine;
 public class CoinWallet
 {
 	//デバッグ用SerializeField
-	[SerializeField] int _wallet;
-	public int Wallet => _wallet;
+	[SerializeField] int _coins;
+	[SerializeField] PlayerID _playerID;
+	public int Coins => _coins;
+	public PlayerID PlayerID => _playerID;
 
 	public void Collect(int coinValue)
 	{
-		_wallet += coinValue;
+		_coins += coinValue;
 	}
 }
