@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] InputMoveSetting _inputSetting;
 	Rigidbody2D _rb;
 	float _horizontal;
-
-    // Start is called before the first frame update
+	[SerializeField] bool _gotMode = false;	
+	
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();

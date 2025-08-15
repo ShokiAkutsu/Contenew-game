@@ -12,6 +12,10 @@ public class CoinWallet
 	public int Coins => _coins;
 	public PlayerID PlayerID => _playerID;
 
+	/// <summary>
+	/// 獲得したコインの価値を所持金に反映するメソッド
+	/// </summary>
+	/// <param name="coinValue"></param>
 	public void Collect(int coinValue)
 	{
 		_coins += coinValue;
