@@ -9,7 +9,7 @@ public class PlayerCollsionCoin : MonoBehaviour
 
 	private void Start()
 	{
-		_textManager = GameObject.Find("Manager").GetComponent<CoinTextManager>();
+		_textManager = GameObject.FindObjectOfType<CoinTextManager>();
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
