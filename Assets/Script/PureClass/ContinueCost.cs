@@ -6,8 +6,8 @@ using UnityEngine;
 [Serializable]
 public class ContinueCost
 {
-	[SerializeField] int _cost = 1;
-	public int Cost => _cost;
+	[SerializeField] int _value = 1;
+	public int Value => _value;
 
 	/// <summary>
 	/// コンテニューの最低コストを更新する
@@ -16,6 +16,6 @@ public class ContinueCost
 	/// <param name="payCost"></param>
 	public void Update(int payCost)
 	{
-		_cost = payCost + 1;
+		_value = payCost + 1;
 	}
 }

@@ -30,7 +30,7 @@ public class PauseManager : MonoBehaviour
 
 	void Update()
 	{
-		// ESC キーが押されたら一時停止・再開を切り替える
+		// ESC キーが押されたら一時停止・再開を切り替える(0819：デバッグ用)
 		if (Input.GetButtonDown("Cancel"))
 		{
 			Debug.Log("スイッチ中");
