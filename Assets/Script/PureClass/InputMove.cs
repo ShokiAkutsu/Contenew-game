@@ -17,7 +17,7 @@ public class InputMove
 	}
 
 	/// <summary>
-	/// 入力したキーを判断して、数値を返すメソッド
+	/// 入力したキーを判断して、[-1, 0, 1]を返すメソッド
 	/// </summary>
 	/// <param name="player"></param>
 	/// <returns></returns>
@@ -25,8 +25,15 @@ public class InputMove
 	{
 		float axis = 0f;
 
-		if (Input.GetKey(GetLeftKey(player))) axis -= 1f;
-		else if (Input.GetKey(GetRightKey(player))) axis += 1f;
+		if (Input.GetKey(GetLeftKey(player)))
+		{
+			axis -= 1f;
+		}
+		else if (Input.GetKey(GetRightKey(player))) 
+		{
+			axis += 1f;
+		}
+
 		return axis;
 	}
 }

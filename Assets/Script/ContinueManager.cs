@@ -12,11 +12,10 @@ public class ContinueManager : MonoBehaviour
 	[SerializeField] Text _minCost; //最低減のコスト
 	[SerializeField] Text _payCost; //プレイヤーが払うコスト
 
-	int _walletValue;
+	int _payValue;
 	bool _isDecision = false;
 	//1P, 2P用キーコード
-	KeyCode _keyLeft;
-	KeyCode _keyRight;
+	PlayerID _activePlayer;
 
 	private void Start()
 	{
@@ -29,12 +28,14 @@ public class ContinueManager : MonoBehaviour
 	/// </summary>
 	public void PlayerDead(GameObject player)
     {
+		//コンテニューするプレイヤーを格納
+		_activePlayer = player.GetComponent<PlayerController>().PlayerID;
+		//コストの格納
 		PlayerWalletManager wallet = player.GetComponent<PlayerWalletManager>();
-		//Cost変数の定義
 		int maxCost = wallet.CoinValue();	//Playerの持ち金
 		int minCost = _cost.Value;			//現在のコンテニューに必要な金額
-		_walletValue = minCost;				//
-
+		_payValue = minCost;				//必要金額
+		
 		//獲得コインが必要金額以上あるならコンテニュー
 		if (maxCost >= minCost)
 		{
@@ -48,11 +49,11 @@ public class ContinueManager : MonoBehaviour
 			while (!_isDecision)
 			{
 				//左右操作で支払うコストを増減
-				KeyDownController();
+				KeyDownControl();
 				//支払うコストを制限させる
-				_walletValue = Mathf.Clamp(_walletValue, minCost, maxCost);
+				_payValue = Mathf.Clamp(_payValue, minCost, maxCost);
 				//テキストを更新
-				_payCost.text = _walletValue.ToString();
+				_payCost.text = _payValue.ToString();
 			}
 		}
 		//獲得コインが必要金額未満ならゲームオーバー
@@ -62,15 +63,15 @@ public class ContinueManager : MonoBehaviour
 		}
     }
 
-	void KeyDownController()
+	void KeyDownControl()
 	{
-		if(Input.GetKeyDown(KeyCode.F))
+		if(Input.GetKeyDown(InputMove.GetLeftKey(_activePlayer)))
 		{
-			_walletValue--;
+			_payValue--;
 		}
-		if (Input.GetKeyDown(KeyCode.H))
+		if (Input.GetKeyDown(InputMove.GetRightKey(_activePlayer)))
 		{
-			_walletValue++;
+			_payValue++;
 		}
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
