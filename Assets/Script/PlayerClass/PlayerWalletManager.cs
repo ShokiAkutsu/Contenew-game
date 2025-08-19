@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollsionCoin : MonoBehaviour
+public class PlayerWalletManager : MonoBehaviour
 {
 	[SerializeField] CoinWallet _wallet;
 	CoinTextManager _textManager;
+
+	public int CoinValue()
+	{
+		return _wallet.Coins;
+	}
 
 	private void Start()
 	{

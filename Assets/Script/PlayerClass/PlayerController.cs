@@ -5,8 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+	[SerializeField] PlayerID _playerID;
     [SerializeField] float _moveSpeed = 3f;
-	[SerializeField] InputMoveSetting _inputSetting;
 	Rigidbody2D _rb;
 	float _horizontal;
 	[SerializeField] bool _gotMode = false;	
@@ -14,23 +14,11 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-		//_inputSetting = new InputMoveSetting();
     }
 
 	private void Update()
 	{
-		//横移動の初期化
-		_horizontal = 0;
-
-		//Inspectorで設定したキーが押されたら、_horizontalに値を入れる
-		if (Input.GetKey(_inputSetting.Left))
-		{
-			_horizontal = -1;
-		}
-		else if (Input.GetKey(_inputSetting.Right))
-		{
-			_horizontal = 1;
-		}
+		_horizontal = InputMove.GetHorizontalAxis(_playerID);
 	}
 
 	private void FixedUpdate()
