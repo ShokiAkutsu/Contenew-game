@@ -8,14 +8,11 @@ public class CoinTextManager : MonoBehaviour
 	[SerializeField] Text _player1Text;
 	[SerializeField] Text _player2Text;
 
-	// Start is called before the first frame update
-	void Start()
-    {
-		//UI‚Ì‰Šú‰»
-		UpdateUI(PlayerID.Player_1P, 0);
-		UpdateUI(PlayerID.Player_2P, 0);
-    }
-
+	/// <summary>
+	/// PlayerID‚É‘Î‰‚µ‚½Š‹àUI‚ÌXV‚ğ‚·‚é
+	/// </summary>
+	/// <param name="playerID"></param>
+	/// <param name="Value"></param>
     public void UpdateUI(PlayerID playerID, int Value)
     {
 		if (playerID == PlayerID.Player_1P)

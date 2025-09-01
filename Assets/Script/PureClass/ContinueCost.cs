@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// コンテニューに必要な最低コストを格納するクラス
+/// </summary>
 [Serializable]
 public class ContinueCost
 {

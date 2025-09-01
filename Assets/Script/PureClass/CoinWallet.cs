@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// プレイヤーが持つ所持金クラス
+/// </summary>
 [Serializable]
 public class CoinWallet
 {
@@ -11,6 +14,7 @@ public class CoinWallet
 	[SerializeField] PlayerID _playerID;
 	public int Coins => _coins;
 	public PlayerID PlayerID => _playerID;
+	event Action<PlayerID, int> OnCoinsChanged;
 
 	/// <summary>
 	/// 獲得したコインの価値を所持金に反映するメソッド

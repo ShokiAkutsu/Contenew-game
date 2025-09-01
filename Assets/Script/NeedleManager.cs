@@ -4,20 +4,12 @@ using UnityEngine;
 
 public class NeedleManager : MonoBehaviour
 {
-    PauseManager _pause;
-    ContinueManager _continue;
+    PlayerDeadManager _dead;
 
     // Start is called before the first frame update
     void Start()
     {
-        _pause = GameObject.FindObjectOfType<PauseManager>();
-        _continue = GameObject.FindObjectOfType<ContinueManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _dead = GameObject.FindObjectOfType<PlayerDeadManager>();
     }
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -25,8 +17,8 @@ public class NeedleManager : MonoBehaviour
 		if(collision.gameObject.tag == "Player")
         {
             Debug.Log("‚Æ‚°‚ª“–‚½‚è‚Ü‚µ‚½");
-            _pause.Switching();
-            _continue.PlayerDead(collision.gameObject);
+            GameObject player = collision.gameObject;
+            StartCoroutine(_dead.IsContinue(player));
         }
 	}
 }

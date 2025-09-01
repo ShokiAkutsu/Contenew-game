@@ -15,6 +15,8 @@ public class PlayerWalletManager : MonoBehaviour
 	private void Start()
 	{
 		_textManager = GameObject.FindObjectOfType<CoinTextManager>();
+		//初期設定の所持金がUIに反映されるようにする
+		_textManager.UpdateUI(_wallet.PlayerID, _wallet.Coins);
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -22,11 +24,22 @@ public class PlayerWalletManager : MonoBehaviour
 		if(collision.gameObject.tag == "Coin")
 		{
 			CoinManager coin = collision.GetComponent<CoinManager>();
-			//コインの価値を反映
-			_wallet.Collect(coin.Value);
-			//コインのUI更新
-			_textManager.UpdateUI(_wallet.PlayerID, _wallet.Coins);
+
+			SetWallet(coin.Value);
+
 			Destroy(collision.gameObject);
 		}
+	}
+
+	/// <summary>
+	/// 所持金の増減とUIの更新を行うメソッド
+	/// </summary>
+	/// <param name="value"></param>
+	public void SetWallet(int value)
+	{
+		//コインの価値を反映
+		_wallet.Collect(value);
+		//コインのUI更新
+		_textManager.UpdateUI(_wallet.PlayerID, _wallet.Coins);
 	}
 }

@@ -55,4 +55,14 @@ public class PauseManager : MonoBehaviour
 			OnResume?.Invoke();
 		}
 	}
+
+	public void On()
+	{
+		OnPause?.Invoke();
+	}
+
+	public void Off()
+	{
+		OnResume?.Invoke();
+	}
 }
