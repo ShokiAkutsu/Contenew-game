@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float _moveSpeed = 3f;
 	Rigidbody2D _rb;
 	float _horizontal;
-	[SerializeField] bool _gotMode = false;
 	public PlayerID PlayerID => _playerID;
 	
     void Start()
