@@ -7,7 +7,7 @@ public class ContinueManager : MonoBehaviour
 {
     [Header("コンテニューするための最低コインを格納")]
     [SerializeField] ContinueCost _cost;
-    [SerializeField] Canvas _canvas;
+    [SerializeField] Canvas _canvas;	//コンテニューキャンバスを登録
 
 	[SerializeField] Text _minCost; //最低減のコスト
 	[SerializeField] Text _payCost; //プレイヤーが払うコスト
@@ -34,8 +34,8 @@ public class ContinueManager : MonoBehaviour
 		_activePlayer = player.GetComponent<PlayerController>().PlayerID;
 		//コストの格納
 		_wallet = player.GetComponent<PlayerWalletManager>();
-		int maxCost = _wallet.CoinValue();	//Playerの持ち金
-		int minCost = _cost.Value;			//現在のコンテニューに必要な金額
+		int maxCost = _wallet.CoinValue();	  //Playerの持ち金を最大値
+		int minCost = _cost.Value;			 //現在のコンテニューに必要な金額を最低値
 		_payValue = minCost;				//必要金額
 		
 		//獲得コインが必要金額以上あるならコンテニュー
@@ -60,9 +60,10 @@ public class ContinueManager : MonoBehaviour
 		//UIの表示
 		_canvas.gameObject.SetActive(true);
 		_minCost.text = minCost.ToString();
+		//操作しているPlayerに合わせて、UIを更新
+		_canvas.GetComponentInChildren<ContinueArrow>().UpdateUI(_activePlayer);
 
 		//コンテニュー, リタイアボタンが押されるまでループ
-		//このwhileループは、1フレームごとに待機するためフリーズしない
 		while (!_isDecision)
 		{
 			//左右操作で支払うコストを増減
@@ -71,7 +72,6 @@ public class ContinueManager : MonoBehaviour
 			_payValue = Mathf.Clamp(_payValue, minCost, maxCost);
 			//テキストを更新
 			_payCost.text = _payValue.ToString();
-
 			// ここで1フレーム待機し、Unityに制御を戻す。
 			yield return null;
 		}

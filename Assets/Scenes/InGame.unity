@@ -922,7 +922,7 @@ MonoBehaviour:
   _coinPrefab:
   - {fileID: 2659353279745330698, guid: 772c51fa679b93e4384d67e736cf46e9, type: 3}
   _spawnPointParent: {fileID: 191262304}
-  _interval: 5
+  _interval: 2
 --- !u!1 &586731826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1102,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &616356101
 RectTransform:
@@ -1116,8 +1116,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 587256636}
   - {fileID: 1349376086}
+  - {fileID: 587256636}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2408,6 +2408,7 @@ GameObject:
   - component: {fileID: 1864515673}
   - component: {fileID: 1864515672}
   - component: {fileID: 1864515671}
+  - component: {fileID: 1864515675}
   m_Layer: 5
   m_Name: ContinueCanvas
   m_TagString: Untagged
@@ -2498,6 +2499,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1864515675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864515670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52386750301fa8640a298010183f34f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _leftArrow: {fileID: 464366621}
+  _rightArrow: {fileID: 1962356245}
+  _leftArrow1P: {fileID: 21300000, guid: 824ab1a36be1a2b499491a58d7ee00b2, type: 3}
+  _rightArrow1P: {fileID: 21300000, guid: cd7f899b87c45724f955b76467027c9b, type: 3}
+  _leftArrow2P: {fileID: 21300000, guid: 260146c96d073fe488f2bc034f01df83, type: 3}
+  _rightArrow2P: {fileID: 21300000, guid: 4b17fb28d98915a4f8bd63ebb5997435, type: 3}
 --- !u!1 &1874662049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,7 +3230,7 @@ Transform:
   m_GameObject: {fileID: 2137479006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.48, y: -4.21, z: 0}
+  m_LocalPosition: {x: -7.97, y: -4.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3225,8 +3244,8 @@ SceneRoots:
   - {fileID: 159838342}
   - {fileID: 752108451}
   - {fileID: 1090440875}
-  - {fileID: 616356101}
   - {fileID: 1864515674}
+  - {fileID: 616356101}
   - {fileID: 516041088}
   - {fileID: 1886419608}
   - {fileID: 1942216389}
