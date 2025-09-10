@@ -62,6 +62,7 @@ public class ContinueManager : MonoBehaviour
 		_minCost.text = minCost.ToString();
 		//操作しているPlayerに合わせて、UIを更新
 		_canvas.GetComponentInChildren<ContinueArrow>().UpdateUI(_activePlayer);
+		_canvas.GetComponentInChildren<ActiveUIManager>().UpdateUI(_activePlayer);
 
 		//コンテニュー, リタイアボタンが押されるまでループ
 		while (!_isDecision)

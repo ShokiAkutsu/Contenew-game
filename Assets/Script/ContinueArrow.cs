@@ -16,7 +16,7 @@ public class ContinueArrow : MonoBehaviour
     [SerializeField] Sprite _leftArrow2P;
     [SerializeField] Sprite _rightArrow2P;
 
-    public void UpdateUI(PlayerID playerID)
+	public void UpdateUI(PlayerID playerID)
     {
 		_leftArrow.sprite = playerID == PlayerID.Player_1P ? _leftArrow1P : _leftArrow2P;
 		_rightArrow.sprite = playerID == PlayerID.Player_1P ? _rightArrow1P : _rightArrow2P;

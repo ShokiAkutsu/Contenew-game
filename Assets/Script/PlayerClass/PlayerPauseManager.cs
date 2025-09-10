@@ -33,8 +33,10 @@ public class PlayerPauseManager : MonoBehaviour
 
 	void Pause()
 	{
+		//Player‚ÌˆÚ“®ˆ—‚ğ–³Œø‰»‚·‚é
 		_playerController.enabled = false;
 		_jumpController.enabled = false;
+		//Player‚Ìó‘Ô‚ğ•Û‘¶‚µ‚Ä‚¨‚­
 		_angularVelocity = _rb.angularVelocity;
 		_velocity = _rb.velocity;
 		_rb.Sleep();
@@ -42,8 +44,10 @@ public class PlayerPauseManager : MonoBehaviour
 
 	void Resume()
 	{
+		//Player‚ÌˆÚ“®ˆ—‚ğ—LŒø‰»‚·‚é
 		_playerController.enabled = true;
 		_jumpController.enabled = true;
+		//Player‚Ìó‘Ô‚ğÄ•œ‹A‚³‚¹‚é
 		_rb.WakeUp();
 		_rb.angularVelocity = _angularVelocity;
 		_rb.velocity = _velocity;
