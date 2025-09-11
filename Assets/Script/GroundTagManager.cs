@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class GroundTagManager : MonoBehaviour
 {
+	// ‘«ê‚Ìó‘Ô‚ğŠi”[
 	Dictionary<Rigidbody2D, PhysicsState> _groundStates = new Dictionary<Rigidbody2D, PhysicsState>();
-	//List<Rigidbody2D> _groundRb = new List<Rigidbody2D>();
 
 	private struct PhysicsState
 	{
