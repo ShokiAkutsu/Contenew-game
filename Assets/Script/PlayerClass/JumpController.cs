@@ -24,6 +24,12 @@ public class JumpController : MonoBehaviour
 		{
 			_rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
 		}
+
+		// リフトオフバグの解消
+		if(_rb.velocity.y == 0)
+		{
+			_isGround = true;
+		}
 	}
 
 	void FixedUpdate()
