@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -28,42 +29,39 @@ public class GroundTagManager : MonoBehaviour
 
 	public void Stopping()
 	{
-		//現在生成されている足場を全て取得する
-		GameObject[] grounds = GameObject.FindGameObjectsWithTag("Ground");
-
-		foreach (GameObject obj in grounds)
+		// Linqを使用する課題 勉強のためにコメント
+		GameObject.FindGameObjectsWithTag("Ground")		// GroundタグのGameObjectを全取得
+		.Select(obj => obj.GetComponent<Rigidbody2D>()) // RigidBody2Dを取得して{選んで}返す
+		.Where(rb => rb != null)						// rbのnullチェック {Whereはboolできるやつ}
+		.ToList()										// リスト化 {trueならリスト化}
+		.ForEach(rb =>									// 動きを止めるためのforeachを行う {リストをまわす}
 		{
-			Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
-
-			if (rb == null) continue;
-
-			PhysicsState state = new PhysicsState   // 足場の状態を保存しておく
+			_groundStates[rb] = new PhysicsState
 			{
-				_velocity = rb.velocity,
+				_velocity = rb.velocity, 
 				_angularVelocity = rb.angularVelocity
 			};
-			
-			_groundStates[rb] = state;  // Dictionaryに格納			
-			rb.Sleep();				　 //動きを止める
-		}
+			rb.Sleep();// 動きを停止
+		});
 	}
 
 	public void Starting()
 	{
-		foreach (var kvp in _groundStates)
+		// 作成しているステータスを基にする
+		_groundStates
+		.Where(kvp => kvp.Key != null)					// nullチェック
+		.ToList()										// リスト化する
+		.ForEach(kvp =>									// リストをまわす
 		{
 			Rigidbody2D rb = kvp.Key;
+			rb.WakeUp(); // 動きを再開
 
-			if (rb == null) continue;
-
-			rb.WakeUp();	//動きを再開
-
-			PhysicsState state = kvp.Value;     // 足場の状態を渡す
-
-			rb.velocity = state._velocity;					// 足場の状態を元に戻す
+			PhysicsState state = kvp.Value; // 足場の状態を渡す
+			// 足場の状態を元に戻す
+			rb.velocity = state._velocity;  
 			rb.angularVelocity = state._angularVelocity;
-		}
+		});
 
-		_groundStates.Clear();  // Dictionaryを初期化させる
+		_groundStates.Clear(); // Dictionaryを初期化
 	}
 }
