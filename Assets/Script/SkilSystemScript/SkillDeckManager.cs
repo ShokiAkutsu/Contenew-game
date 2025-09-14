@@ -11,6 +11,10 @@ public class SkillDeckManager : MonoBehaviour
     SkillSO _centerSkill;
     SkillSO _rightSkill;
 
+	//PlayerIDManager _playerIDManager;
+	PlayerWalletManager _wallet1P;
+	PlayerWalletManager _wallet2P;
+
 	private void Awake()
 	{
         // メソッドの使い道がここだけなら、直接記述する
@@ -19,6 +23,10 @@ public class SkillDeckManager : MonoBehaviour
 
 	private void Start()
     {
+		PlayerIDManager playerIDManager = GameObject.FindObjectOfType<PlayerIDManager>();
+		_wallet1P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_1P);
+		_wallet2P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_2P);
+
         // 初期手札を格納
         _leftSkill = DrawDeck();
         _centerSkill = DrawDeck();
@@ -55,7 +63,15 @@ public class SkillDeckManager : MonoBehaviour
             return false;
         }
 
-		// 所持金からコストを差し引く(Playerの所持金を参照する書き方をしたい)
+		// 所持金からコストを差し引く
+		if(player == PlayerID.Player_1P)
+		{
+			_wallet1P.SetWallet(-skill.Cost);
+		}
+		else
+		{
+			_wallet2P.SetWallet(-skill.Cost);
+		}
 
 		ExecuteSkillEffect(skill, player); // スキルを発動する
 

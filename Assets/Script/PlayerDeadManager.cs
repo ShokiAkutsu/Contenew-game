@@ -13,7 +13,7 @@ public class PlayerDeadManager : MonoBehaviour
 		_continue = GameObject.FindObjectOfType<ContinueManager>();
 	}
 
-	public IEnumerator IsContinue(GameObject player)
+	public IEnumerator IsContinue(PlayerID player)
     {
 		//ƒQ[ƒ€‚Å“®‚¢‚Ä‚¢‚½•¨‘Ì‚ğ’â~
 		_pause.On();

@@ -18,9 +18,11 @@ public class ContinueManager : MonoBehaviour
 	PlayerID _activePlayer;
 
 	PlayerWalletManager _wallet;
+	PlayerIDManager _playerManager;
 
 	private void Start()
 	{
+		_playerManager = GameObject.FindObjectOfType<PlayerIDManager>();
 		_canvas.gameObject.SetActive(false);
 	}
 
@@ -28,12 +30,12 @@ public class ContinueManager : MonoBehaviour
 	/// プレイヤーが死んだら呼び出されるメソッド
 	/// コンテニューの総括
 	/// </summary>
-	public IEnumerator PlayerDead(GameObject player)
+	public IEnumerator PlayerDead(PlayerID player)
     {
 		//コンテニューするプレイヤーを格納
-		_activePlayer = player.GetComponent<PlayerIDIdentity>().PlayerID;
+		_activePlayer = player;
 		//コストの格納
-		_wallet = player.GetComponent<PlayerWalletManager>();
+		_wallet = _playerManager.GetPlayerComponent<PlayerWalletManager>(player);
 		int maxCost = _wallet.CoinValue();	  //Playerの持ち金を最大値
 		int minCost = _cost.Value;			 //現在のコンテニューに必要な金額を最低値
 		_payValue = minCost;				//必要金額
