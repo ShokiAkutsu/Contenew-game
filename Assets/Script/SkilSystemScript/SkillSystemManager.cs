@@ -4,22 +4,39 @@ using UnityEngine;
 
 public class SkillSystemManager : MonoBehaviour
 {
-    void Update()
+	SkillDeckManager _deckManager;
+
+	private void Start()
+	{
+		_deckManager = GameObject.FindObjectOfType<SkillDeckManager>();
+	}
+
+	void Update()
     {
         CheckPlayerInput(PlayerID.Player_1P);
         CheckPlayerInput(PlayerID.Player_2P);
     }
 
-	private void CheckPlayerInput(PlayerID player)
+	private void CheckPlayerInput(PlayerID playerID)
 	{
 		// スキルキー設定を構造体から取得
-		InputSkillKey config = SkillKeyConfig.GetConfig(player);
+		InputSkillKey config = SkillKeyConfig.GetConfig(playerID);
 
 		// 入力チェック
-		if (Input.GetKeyDown(config.LeftSkill)) Debug.Log($"{player}左のスキル");
-		else if (Input.GetKeyDown(config.CenterSkill)) Debug.Log($"{player}中のスキル");
-		else if (Input.GetKeyDown(config.RightSkill)) Debug.Log($"{player}右のスキル");
+		if (Input.GetKeyDown(config.LeftSkill))
+		{
+			Debug.Log($"{playerID}左のスキル");
+			_deckManager.TryActivate(playerID, SkillPosition.Left);
+		} 
+		else if (Input.GetKeyDown(config.CenterSkill))
+		{
+			Debug.Log($"{playerID}中のスキル");
+			_deckManager.TryActivate(playerID, SkillPosition.Center);
+		}
+		else if (Input.GetKeyDown(config.RightSkill))
+		{
+			Debug.Log($"{playerID}右のスキル");
+			_deckManager.TryActivate(playerID, SkillPosition.Right);
+		}
 	}
-
-
 }
