@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class SkillSystemManager : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         CheckPlayerInput(PlayerID.Player_1P);
@@ -28,4 +20,6 @@ public class SkillSystemManager : MonoBehaviour
 		else if (Input.GetKeyDown(config.CenterSkill)) Debug.Log($"{player}中のスキル");
 		else if (Input.GetKeyDown(config.RightSkill)) Debug.Log($"{player}右のスキル");
 	}
+
+
 }
