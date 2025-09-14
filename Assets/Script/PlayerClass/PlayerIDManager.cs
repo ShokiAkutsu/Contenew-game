@@ -22,8 +22,8 @@ public class PlayerIDManager : MonoBehaviour
 			return;
 		}
 
-		PlayerController[] allPlayers = FindObjectsOfType<PlayerController>();
-		foreach (PlayerController player in allPlayers)
+		PlayerIDIdentity[] allPlayers = FindObjectsOfType<PlayerIDIdentity>();
+		foreach (PlayerIDIdentity player in allPlayers)
 		{
 			_playerDictionary[player.PlayerID] = player.gameObject;
 		}

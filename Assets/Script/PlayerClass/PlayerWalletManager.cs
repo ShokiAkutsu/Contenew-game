@@ -6,6 +6,7 @@ public class PlayerWalletManager : MonoBehaviour
 {
 	[SerializeField] CoinWallet _wallet;
 	CoinTextManager _textManager;
+	PlayerIDIdentity _id;
 
 	public int CoinValue()
 	{
@@ -15,8 +16,9 @@ public class PlayerWalletManager : MonoBehaviour
 	private void Start()
 	{
 		_textManager = GameObject.FindObjectOfType<CoinTextManager>();
+		_id = GetComponent<PlayerIDIdentity>();
 		//初期設定の所持金がUIに反映されるようにする
-		_textManager.UpdateUI(_wallet.PlayerID, _wallet.Coins);
+		_textManager.UpdateUI(_id.PlayerID, _wallet.Coins);
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -40,6 +42,6 @@ public class PlayerWalletManager : MonoBehaviour
 		//コインの価値を反映
 		_wallet.Collect(value);
 		//コインのUI更新
-		_textManager.UpdateUI(_wallet.PlayerID, _wallet.Coins);
+		_textManager.UpdateUI(_id.PlayerID, _wallet.Coins);
 	}
 }

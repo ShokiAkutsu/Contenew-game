@@ -31,7 +31,7 @@ public class ContinueManager : MonoBehaviour
 	public IEnumerator PlayerDead(GameObject player)
     {
 		//コンテニューするプレイヤーを格納
-		_activePlayer = player.GetComponent<PlayerController>().PlayerID;
+		_activePlayer = player.GetComponent<PlayerIDIdentity>().PlayerID;
 		//コストの格納
 		_wallet = player.GetComponent<PlayerWalletManager>();
 		int maxCost = _wallet.CoinValue();	  //Playerの持ち金を最大値

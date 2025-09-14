@@ -11,9 +11,9 @@ public class CoinWallet
 {
 	//デバッグ用SerializeField
 	[SerializeField] int _coins;
-	[SerializeField] PlayerID _playerID;
+	//[SerializeField] PlayerID _playerID;
 	public int Coins => _coins;
-	public PlayerID PlayerID => _playerID;
+	//public PlayerID PlayerID => _playerID;
 	event Action<PlayerID, int> OnCoinsChanged;
 
 	/// <summary>

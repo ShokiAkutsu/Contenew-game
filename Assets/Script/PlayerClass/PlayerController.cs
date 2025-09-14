@@ -5,20 +5,20 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] PlayerID _playerID;
     [SerializeField] float _moveSpeed = 3f;
 	Rigidbody2D _rb;
 	float _horizontal;
-	public PlayerID PlayerID => _playerID;
+	PlayerIDIdentity _id; // PlayerID‚ðŠi”[‚·‚éƒNƒ‰ƒX
 	
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+		_id = GetComponent<PlayerIDIdentity>();
     }
 
 	private void Update()
 	{
-		_horizontal = InputMove.GetHorizontalAxis(_playerID);
+		_horizontal = InputMove.GetHorizontalAxis(_id.PlayerID);
 	}
 
 	private void FixedUpdate()
