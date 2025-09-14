@@ -20,6 +20,7 @@ public class JumpController : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		// それぞれのジャンプキーを直下&設置判定があるなら跳ぶ
 		if (Input.GetKeyDown(_inputSetting.Jump) && _isGround)
 		{
 			_rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
