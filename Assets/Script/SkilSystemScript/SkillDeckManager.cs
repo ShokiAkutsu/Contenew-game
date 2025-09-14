@@ -17,19 +17,23 @@ public class SkillDeckManager : MonoBehaviour
 	{
         // メソッドの使い道がここだけなら、直接記述する
 		ShuffleDeck();
-	}
-
-	private void Start()
-    {
-		PlayerIDManager playerIDManager = GameObject.FindObjectOfType<PlayerIDManager>();
-		_wallet1P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_1P);
-		_wallet2P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_2P);
 
 		// 初期手札を格納
 		_openSkill[SkillPosition.Left] = DrawDeck();
 		_openSkill[SkillPosition.Center] = DrawDeck();
 		_openSkill[SkillPosition.Right] = DrawDeck();
-    }
+	}
+
+	private void Start()
+	{
+		PlayerIDManager playerIDManager = GameObject.FindObjectOfType<PlayerIDManager>();
+		_wallet1P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_1P);
+		_wallet2P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_2P);
+
+		Debug.Log($"{_openSkill[SkillPosition.Left]}");
+		Debug.Log($"{_openSkill[SkillPosition.Center]}");
+		Debug.Log($"{_openSkill[SkillPosition.Right]}");
+	}
 
     /// <summary>
     /// 表示するスキルを山札の先頭スキルを補充するメソッド
