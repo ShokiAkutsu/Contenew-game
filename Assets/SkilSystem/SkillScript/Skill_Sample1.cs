@@ -6,6 +6,9 @@ public class SkillSample1 : MonoBehaviour, ISkillEffect
 {
 	public void Execute(PlayerID usePlayerID)
 	{
-		Debug.Log("‚Ü‚Ì‚³‚Î");
+		Vector3 playerPos = PlayerIDManager.Instance.GetPlayerPosition(usePlayerID);
+
+		Debug.Log(playerPos);
+		Debug.Log("ŒÄ‚Ño‚³‚ê‚Ä‚¢‚Ü‚·‚©H");
 	}
 }

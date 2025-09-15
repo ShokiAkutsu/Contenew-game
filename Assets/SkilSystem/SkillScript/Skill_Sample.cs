@@ -6,6 +6,6 @@ public class SkillSample : MonoBehaviour, ISkillEffect
 {
 	public void Execute(PlayerID usePlayerID)
 	{
-		Debug.Log("スキルが発動しました！！");
+		Debug.Log("テスト");
 	}
 }

@@ -54,4 +54,16 @@ public class PlayerIDManager : MonoBehaviour
 		GameObject playerObj = GetPlayerGameObject(playerID);
 		return playerObj != null ? playerObj.GetComponent<T>() : null;
 	}
+
+	// 位置を取得するメソッド
+	public Vector3 GetPlayerPosition(PlayerID playerID)
+	{
+		Transform playerTransform = _playerDictionary[playerID].transform;
+
+		if (playerTransform != null)
+		{
+			return playerTransform.position;
+		}
+		return Vector3.zero;
+	}
 }

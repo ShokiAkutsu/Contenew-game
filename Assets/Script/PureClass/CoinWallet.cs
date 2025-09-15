@@ -23,5 +23,8 @@ public class CoinWallet
 	public void Collect(int coinValue)
 	{
 		_coins += coinValue;
+
+		// ŽØ‹à‚ð‚µ‚È‚¢‚æ‚¤‚É‚·‚é
+		if(_coins < 0) _coins = 0;
 	}
 }

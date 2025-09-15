@@ -30,9 +30,11 @@ public class SkillDeckManager : MonoBehaviour
 		_wallet1P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_1P);
 		_wallet2P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_2P);
 
+		/*
 		Debug.Log($"{_openSkill[SkillPosition.Left]}");
 		Debug.Log($"{_openSkill[SkillPosition.Center]}");
 		Debug.Log($"{_openSkill[SkillPosition.Right]}");
+		*/
 	}
 
     /// <summary>
@@ -62,16 +64,19 @@ public class SkillDeckManager : MonoBehaviour
     {
 		SkillSO skill = _openSkill[skillPos]; // 対応位置にあるスキルを格納
 
-		// コスト未満なら終了
-        if(skill == null && skill.Cost < 0)	return;
-
 		// 所持金からコストを差し引く
 		if(player == PlayerID.Player_1P)
 		{
+			// コスト未満なら終了
+			if (skill == null && _wallet1P.CoinValue() < skill.Cost) return;
+
 			_wallet1P.SetWallet(-skill.Cost);
 		}
 		else
 		{
+			// コスト未満なら終了
+			if (skill == null && _wallet2P.CoinValue() < skill.Cost) return;
+
 			_wallet2P.SetWallet(-skill.Cost);
 		}
 
