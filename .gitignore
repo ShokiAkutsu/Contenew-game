@@ -105,3 +105,240 @@ Assets/Images/keyboard_j_white.png
 Assets/Images/keyboard_j_white.png.meta
 Assets/Images/keyboard_l_white.png
 Assets/Images/keyboard_l_white.png.meta
+Assets/UnityAsset/War.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/README.txt
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/README.txt.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Scenes.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death (No flash) - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death (No flash) - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death (No flash) - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Blue/Blue Death (No flash) - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death (No flash) - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death (No flash) - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death (No flash) - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Green/Green Death (No flash) - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death (No flash) - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death (No flash) - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death (No flash) - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Death/Red/Red Death (No flash) - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt (No flash) - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt (No flash) - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt (No flash) - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Blue/Blue Hurt (No flash) - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt (No flash) - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt (No flash) - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt (No flash) - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Green/Green Hurt (No flash) - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt (No flash) - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt (No flash) - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt (No flash) - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Hurt/Red/Red Hurt (No flash) - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Blue/Blue Idle - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Blue/Blue Idle - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Blue/Blue Idle - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Blue/Blue Idle - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Green/Green Idle - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Green/Green Idle - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Green/Green Idle - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Green/Green Idle - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Red/Red Idle - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Red/Red Idle - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Red/Red Idle - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Idle/Red/Red Idle - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Down - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Down - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Land - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Land - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Start-up - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Start-up - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump To Fall - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump To Fall - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Up - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Blue/Blue Jump Up - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Down - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Down - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Land - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Land - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Start-up - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Start-up - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump To Fall - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump To Fall - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Up - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Green/Green Jump Up - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump - Controller.controller
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump - Controller.controller.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Down - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Down - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Land - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Land - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Start-up - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Start-up - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump To Fall - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump To Fall - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Up - Animation.anim
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Animation/Jump/Red/Red Jump Up - Animation.anim.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Death (No Flash).prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Death (No Flash).prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Death.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Death.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Hurt (No Flash).prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Hurt (No Flash).prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Hurt.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Hurt.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Idle.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Idle.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Jump.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Blue/Blue Jump.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Death (No Flash).prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Death (No Flash).prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Death.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Death.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Hurt (No Flash).prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Hurt (No Flash).prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Hurt.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Hurt.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Idle.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Idle.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Jump.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Green/Green Jump.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Death (No Flash).prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Death (No Flash).prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Death.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Death.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Hurt (No Flash).prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Hurt (No Flash).prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Hurt.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Hurt.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Idle.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Idle.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Jump.prefab
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Prefabs/Red/Red Jump.prefab.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Scenes/Demo.unity
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Scenes/Demo.unity.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Blue/Sprite Sheet - Blue Death - No Flash.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Blue/Sprite Sheet - Blue Death - No Flash.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Blue/Sprite Sheet - Blue Death.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Blue/Sprite Sheet - Blue Death.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Green/Sprite Sheet - Green Death - No Flash.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Green/Sprite Sheet - Green Death - No Flash.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Green/Sprite Sheet - Green Death.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Green/Sprite Sheet - Green Death.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Red/Sprite Sheet - Red Death - No Flash.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Red/Sprite Sheet - Red Death - No Flash.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Red/Sprite Sheet - Red Death.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Death/Red/Sprite Sheet - Red Death.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt - No Flash.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt - No Flash.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Blue/Sprite Sheet - Blue Hurt.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Green/Sprite Sheet - Green Hurt - No Flash.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Green/Sprite Sheet - Green Hurt - No Flash.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Green/Sprite Sheet - Green Hurt.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Green/Sprite Sheet - Green Hurt.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red/Sprite Sheet - Red Hurt - No Flash.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red/Sprite Sheet - Red Hurt - No Flash.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red/Sprite Sheet - Red Hurt.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Hurt/Red/Sprite Sheet - Red Hurt.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Blue/Sprite Sheet - Blue Idle.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Blue/Sprite Sheet - Blue Idle.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Green/Sprite Sheet - Green Idle.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Green/Sprite Sheet - Green Idle.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Red/Sprite Sheet - Red Idle.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Idle/Red/Sprite Sheet - Red Idle.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Down.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Down.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Land.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Land.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Start-up.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Start-up.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump to Fall.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump to Fall.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Up.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Blue/Sprite Sheet - Blue Jump Up.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Down.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Down.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Land.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Land.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Start-up.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Start-up.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump to Fall.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump to Fall.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Up.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Green/Sprite Sheet - Green Jump Up.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Down.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Down.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Land.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Land.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Start-up.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Start-up.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump to Fall.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump to Fall.png.meta
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Up.png
+Assets/UnityAsset/War/Slime Enemy - Pixel Art/Sprites/Jump/Red/Sprite Sheet - Red Jump Up.png.meta
