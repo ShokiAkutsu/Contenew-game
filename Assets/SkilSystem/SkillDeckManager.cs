@@ -7,7 +7,8 @@ public class SkillDeckManager : MonoBehaviour
 {
 	// スキルの山札
     [SerializeField] List<SkillSO> _deck;
-	// スキルの手札
+	// スキルの手札(別スクリプトで管理予定)
+	OpenSkillManager _openSkillManager;
 	Dictionary<SkillPosition, SkillSO> _openSkill = new Dictionary<SkillPosition, SkillSO>();
 	// 各プレイヤーの所持金参照
 	PlayerWalletManager _wallet1P;
@@ -17,11 +18,13 @@ public class SkillDeckManager : MonoBehaviour
 	{
         // メソッドの使い道がここだけなら、直接記述する
 		ShuffleDeck();
+		// 手札管理マネージャー
+		_openSkillManager = GameObject.FindFirstObjectByType<OpenSkillManager>();
 
 		// 初期手札を格納
-		_openSkill[SkillPosition.Left] = DrawDeck();
-		_openSkill[SkillPosition.Center] = DrawDeck();
-		_openSkill[SkillPosition.Right] = DrawDeck();
+		DrawDeck(SkillPosition.Left);
+		DrawDeck(SkillPosition.Center);
+		DrawDeck(SkillPosition.Right);
 	}
 
 	private void Start()
@@ -32,24 +35,27 @@ public class SkillDeckManager : MonoBehaviour
 	}
 
     /// <summary>
-    /// 表示するスキルを山札の先頭スキルを補充するメソッド
+    /// 表示するスキルを山札の先頭から補充するメソッド
     /// </summary>
-    SkillSO DrawDeck()
+    void DrawDeck(SkillPosition skillPos)
     {
 		if (_deck.Count == 0)
 		{
 			Debug.LogWarning("山札が空です！");
-			return null;
+			return;
 		}
 
 		SkillSO newSkill = _deck[0]; // 先頭にあるスキルを手札の候補にする
-        _deck.RemoveAt(0);           // 山札の先頭のスキルを排除する
-        return newSkill;
+		_openSkill[skillPos] = newSkill; // 空いた手札にスキルを補充
+		_deck.RemoveAt(0);           // 山札の先頭のスキルを排除する
+
+		// 新しいスキルのアイコンとUIの更新
+		_openSkillManager.SkillUpdate(newSkill, skillPos);
     }
 
 	/// <summary>
-	/// 所持金がコスト以上あるならスキルを発動し、
-	/// 山札から手札を補充するメソッド
+	/// 所持金がコスト以上あるならスキルを発動させる
+	/// (ここだけ手札のスキル処理なので、分けてもいいかもしれない)
 	/// </summary>
 	/// <param name="skill"></param>
 	/// <param name="player"></param>
@@ -80,7 +86,7 @@ public class SkillDeckManager : MonoBehaviour
 
 		_deck.Add(skill); // スキル効果発動後、山札の後ろに格納
 
-		_openSkill[skillPos] = DrawDeck(); // 空いた手札にスキルを補充
+		DrawDeck(skillPos);
 	}
 
 	/// <summary>

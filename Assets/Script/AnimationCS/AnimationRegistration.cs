@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// スキルで操作するアニメを登録するだけのメソッド
+/// </summary>
 public class AnimationRegistration : MonoBehaviour
 {
     Animator _anim;
