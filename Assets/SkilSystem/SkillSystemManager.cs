@@ -5,16 +5,32 @@ using UnityEngine;
 public class SkillSystemManager : MonoBehaviour
 {
 	SkillDeckManager _deckManager;
+	bool _isPause = false;
 
 	private void Start()
 	{
 		_deckManager = GameObject.FindObjectOfType<SkillDeckManager>();
 	}
 
+	private void OnEnable()
+	{
+		PauseManager.OnPause += Pause;
+		PauseManager.OnResume += Resume;
+	}
+
+	private void OnDisable()
+	{
+		PauseManager.OnPause -= Pause;
+		PauseManager.OnResume -= Resume;
+	}
+
 	void Update()
     {
-        CheckPlayerInput(PlayerID.Player_1P);
-        CheckPlayerInput(PlayerID.Player_2P);
+		if(!_isPause)
+		{
+			CheckPlayerInput(PlayerID.Player_1P);
+			CheckPlayerInput(PlayerID.Player_2P);
+		}
     }
 
 	private void CheckPlayerInput(PlayerID playerID)
@@ -38,5 +54,15 @@ public class SkillSystemManager : MonoBehaviour
 			Debug.Log($"{playerID}‰E‚ÌƒXƒLƒ‹");
 			_deckManager.TryActivate(playerID, SkillPosition.Right);
 		}
+	}
+
+	private void Pause()
+	{
+		_isPause = true;
+	}
+
+	void Resume()
+	{
+		_isPause = false;
 	}
 }

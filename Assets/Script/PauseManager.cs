@@ -5,28 +5,12 @@ using System;
 
 public class PauseManager : MonoBehaviour
 {
-	// シングルトンインスタンス
-	public static PauseManager Instance { get; private set; }
-
 	// ポーズイベントと再開イベントを定義
 	public static event Action OnPause;
 	public static event Action OnResume;
 
 	// ゲームがポーズ中かどうかを追跡する変数
 	public bool isPaused { get; private set; } = false;
-
-	private void Awake()
-	{
-		if (Instance == null)
-		{
-			Instance = this;
-			DontDestroyOnLoad(gameObject);
-		}
-		else
-		{
-			Destroy(gameObject);
-		}
-	}
 
 	void Update()
 	{
