@@ -334,7 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpForce: 16
   _inputSetting:
-    jump: 119
+    jump: 115
   _fallMultiplier: 3
 --- !u!114 &159838349
 MonoBehaviour:
@@ -1618,7 +1618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _jumpForce: 16
   _inputSetting:
-    jump: 105
+    jump: 107
   _fallMultiplier: 3
 --- !u!114 &752108447
 MonoBehaviour:

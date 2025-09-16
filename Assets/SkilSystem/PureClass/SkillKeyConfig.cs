@@ -12,11 +12,11 @@ public class SkillKeyConfig
 	{
 		// 1PÇÃê›íË
 		_skillConfigs[PlayerID.Player_1P] =
-			new InputSkillKey(KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3);
+			new InputSkillKey(KeyCode.Q, KeyCode.W, KeyCode.E);
 
 		// 2PÇÃê›íË
 		_skillConfigs[PlayerID.Player_2P] =
-			new InputSkillKey(KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9);
+			new InputSkillKey(KeyCode.U, KeyCode.I, KeyCode.P);
 	}
 
 	/// <summary>
