@@ -20,10 +20,12 @@ public class ContinueManager : MonoBehaviour
 
 	PlayerWalletManager _wallet;
 	PlayerIDManager _playerManager;
+	GameOverEffect _gameOverEffect;
 
 	private void Start()
 	{
 		_playerManager = GameObject.FindObjectOfType<PlayerIDManager>();
+		_gameOverEffect = GameObject.FindObjectOfType<GameOverEffect>();
 		_canvas.gameObject.SetActive(false);
 	}
 
@@ -49,9 +51,10 @@ public class ContinueManager : MonoBehaviour
 		//獲得コインが必要金額未満ならゲームオーバー
 		else
 		{
-			Debug.Log("GameOverの処理を記述するところ");
+			PlayerID target = player == PlayerID.Player_1P ? PlayerID.Player_2P : PlayerID.Player_1P;
+			Vector3 targetPos = _playerManager.GetPlayerPosition(target);
 			//シーン変えるか
-			SceneManager.LoadScene(2);
+			_gameOverEffect.StartEffect(targetPos, target);
 		}
 
 		//所持金が減ったことが分かるエフェクトを出したい
