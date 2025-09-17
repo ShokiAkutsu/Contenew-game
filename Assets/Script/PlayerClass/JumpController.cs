@@ -7,6 +7,7 @@ public class JumpController : MonoBehaviour
 	[SerializeField] float _jumpForce = 3f;
 	[SerializeField] InputJumpSetting _inputSetting;
 	[SerializeField] float _fallMultiplier = 3f;
+	Animator _anim;
 	Rigidbody2D _rb;
 	//設置判定
 	bool _isGround = false;
@@ -14,6 +15,7 @@ public class JumpController : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		_anim = GetComponent<Animator>();
 		_rb = GetComponent<Rigidbody2D>();
 	}
 
@@ -56,6 +58,16 @@ public class JumpController : MonoBehaviour
 		if(collision.gameObject.tag == "Ground")
 		{
 			_isGround = false;
+		}
+	}
+
+	private void LateUpdate()
+	{
+		// アニメーションを制御する
+		if (_anim)
+		{
+			_anim.SetBool("IsGround", _isGround);
+			_anim.SetFloat("SpeedY", _rb.velocity.y);
 		}
 	}
 }
