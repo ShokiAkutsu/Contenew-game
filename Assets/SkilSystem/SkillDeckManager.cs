@@ -20,11 +20,6 @@ public class SkillDeckManager : MonoBehaviour
 		ShuffleDeck();
 		// èDŠÇ—ƒ}ƒl[ƒWƒƒ[
 		_openSkillManager = GameObject.FindFirstObjectByType<OpenSkillManager>();
-
-		// ‰ŠúèD‚ğŠi”[
-		DrawDeck(SkillPosition.Left);
-		DrawDeck(SkillPosition.Center);
-		DrawDeck(SkillPosition.Right);
 	}
 
 	private void Start()
@@ -32,6 +27,11 @@ public class SkillDeckManager : MonoBehaviour
 		PlayerIDManager playerIDManager = GameObject.FindObjectOfType<PlayerIDManager>();
 		_wallet1P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_1P);
 		_wallet2P = playerIDManager.GetPlayerComponent<PlayerWalletManager>(PlayerID.Player_2P);
+
+		// ‰ŠúèD‚ğŠi”[
+		DrawDeck(SkillPosition.Left);
+		DrawDeck(SkillPosition.Center);
+		DrawDeck(SkillPosition.Right);
 	}
 
     /// <summary>

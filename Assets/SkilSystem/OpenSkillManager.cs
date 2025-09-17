@@ -16,14 +16,12 @@ public class OpenSkillManager : MonoBehaviour
     [SerializeField] Text _costTextR;
 
 	// SkillPositionと対応するImageを管理する辞書
-	private Dictionary<SkillPosition, Image> _openUI;
-
 	Dictionary<SkillPosition, SkillUI> _openSkillsUI = new Dictionary<SkillPosition, SkillUI>();
 
     struct SkillUI
     { 
-        Image _icon;
-        Text _cost;
+        public Image _icon;
+        public Text _cost;
         public Image Icon => _icon;
         public Text Cost => _cost;
 
@@ -52,7 +50,14 @@ public class OpenSkillManager : MonoBehaviour
     {
 		if (_openSkillsUI.TryGetValue(skillPos, out SkillUI skillUI))
 		{
-			skillUI.UpdateUI(skill.Icon, skill.Cost);
+			// UI要素を直接更新
+			if (skillUI._cost != null)
+				skillUI._cost.text = skill.Cost.ToString();
+
+			if (skillUI._icon != null)
+				skillUI._icon.sprite = skill.Icon;
+
+			_openSkillsUI[skillPos] = skillUI; // 辞書を更新して、UIを反映
 		}
 	}
 }

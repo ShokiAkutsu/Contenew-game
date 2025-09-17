@@ -16,7 +16,7 @@ public class SkillKeyConfig
 
 		// 2PÇÃê›íË
 		_skillConfigs[PlayerID.Player_2P] =
-			new InputSkillKey(KeyCode.U, KeyCode.I, KeyCode.P);
+			new InputSkillKey(KeyCode.U, KeyCode.I, KeyCode.O);
 	}
 
 	/// <summary>

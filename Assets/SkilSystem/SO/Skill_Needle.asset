@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skillName: Sample1
   _cost: 3
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 242848475bcb6814481a61542bc7a6a7, type: 3}
   _skillEffectPrefab: {fileID: 9168238659030883124, guid: 80473e15aa4cc2843be91246c275f24e, type: 3}

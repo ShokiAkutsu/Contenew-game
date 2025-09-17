@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ContinueManager : MonoBehaviour
@@ -50,6 +51,7 @@ public class ContinueManager : MonoBehaviour
 		{
 			Debug.Log("GameOverの処理を記述するところ");
 			//シーン変えるか
+			SceneManager.LoadScene(2);
 		}
 
 		//所持金が減ったことが分かるエフェクトを出したい

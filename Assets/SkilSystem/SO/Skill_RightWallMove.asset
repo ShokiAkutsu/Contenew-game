@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f483f3a46ee42e46b7aae1fff15622f, type: 3}
   m_Name: Skill_RightWallMove
   m_EditorClassIdentifier: 
-  _Type: 0
   _skillName: RightWallMove
   _cost: 1
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 4915842a903dbd740b2f4a5e2c5130c0, type: 3}
   _skillEffectPrefab: {fileID: 9168238659030883124, guid: 50e691f45aaf1f34f8544f65df6ea108, type: 3}
