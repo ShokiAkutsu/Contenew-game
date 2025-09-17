@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skillName: LeftWallMove
   _cost: 1
-  _icon: {fileID: 21300000, guid: 0a3d294a086d2854991d4b7605d0e896, type: 3}
+  _icon: {fileID: 21300000, guid: 4670e81fc5a3ce247a5bc3740eb85d1d, type: 3}
   _skillEffectPrefab: {fileID: 9168238659030883124, guid: 23ddfcbfac1529747a4cf1bc7d94dbfb, type: 3}
