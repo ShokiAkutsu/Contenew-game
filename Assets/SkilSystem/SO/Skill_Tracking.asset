@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f483f3a46ee42e46b7aae1fff15622f, type: 3}
   m_Name: Skill_Tracking
   m_EditorClassIdentifier: 
-  _skillName: Sample
-  _cost: 0
+  _skillName: Traking
+  _cost: 4
   _icon: {fileID: 0}
-  _skillEffectPrefab: {fileID: 9168238659030883124, guid: f62e6176a244c7d43a8f6d745ca347a1, type: 3}
+  _skillEffectPrefab: {fileID: 9168238659030883124, guid: 3044a8f1b04decf47afa6654b5fde3e3, type: 3}
