@@ -7,6 +7,8 @@ public class PlayerWalletManager : MonoBehaviour
 	[SerializeField] CoinWallet _wallet;
 	CoinTextManager _textManager;
 	PlayerIDIdentity _id;
+	AudioSource _audio;
+	[SerializeField] AudioClip _clip;
 
 	public int CoinValue()
 	{
@@ -17,6 +19,7 @@ public class PlayerWalletManager : MonoBehaviour
 	{
 		_textManager = GameObject.FindObjectOfType<CoinTextManager>();
 		_id = GetComponent<PlayerIDIdentity>();
+		_audio = GetComponent<AudioSource>();
 		//‰Šúİ’è‚ÌŠ‹à‚ªUI‚É”½‰f‚³‚ê‚é‚æ‚¤‚É‚·‚é
 		_textManager.UpdateUI(_id.PlayerID, _wallet.Coins);
 	}
@@ -26,6 +29,8 @@ public class PlayerWalletManager : MonoBehaviour
 		if(collision.gameObject.tag == "Coin")
 		{
 			CoinManager coin = collision.GetComponent<CoinManager>();
+
+			_audio.PlayOneShot(_clip);
 
 			SetWallet(coin.Value);
 

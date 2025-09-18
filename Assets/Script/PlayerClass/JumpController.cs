@@ -7,6 +7,8 @@ public class JumpController : MonoBehaviour
 	[SerializeField] float _jumpForce = 3f;
 	[SerializeField] InputJumpSetting _inputSetting;
 	[SerializeField] float _fallMultiplier = 3f;
+	AudioSource _audio;
+	[SerializeField] AudioClip _clip;
 	Animator _anim;
 	Rigidbody2D _rb;
 	//設置判定
@@ -17,6 +19,7 @@ public class JumpController : MonoBehaviour
 	{
 		_anim = GetComponent<Animator>();
 		_rb = GetComponent<Rigidbody2D>();
+		_audio = GetComponent<AudioSource>();
 	}
 
 	// Update is called once per frame
@@ -25,6 +28,7 @@ public class JumpController : MonoBehaviour
 		// それぞれのジャンプキーを直下&設置判定があるなら跳ぶ
 		if (Input.GetKeyDown(_inputSetting.Jump) && _isGround)
 		{
+			_audio.PlayOneShot(_clip);
 			_rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
 		}
 

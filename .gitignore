@@ -349,3 +349,47 @@ Assets/SkilSystem/Sprite/Needle 1.jpg
 Assets/SkilSystem/Sprite/Needle 1.jpg.meta
 Assets/SkilSystem/Sprite/RightWallMove 1.jpg
 Assets/SkilSystem/Sprite/RightWallMove 1.jpg.meta
+Assets/Sounde/BGM.meta
+Assets/Sounde/SE.meta
+Assets/Sounde/BGM/GameOver.mp3
+Assets/Sounde/BGM/GameOver.mp3.meta
+Assets/Sounde/BGM/InGameIntro.mp3
+Assets/Sounde/BGM/InGameIntro.mp3.meta
+Assets/Sounde/BGM/InGameLoop.mp3
+Assets/Sounde/BGM/InGameLoop.mp3.meta
+Assets/Sounde/BGM/Title.mp3
+Assets/Sounde/BGM/Title.mp3.meta
+Assets/Sounde/SE/Coin.mp3
+Assets/Sounde/SE/Coin.mp3.meta
+Assets/Sounde/SE/Jump.mp3
+Assets/Sounde/SE/Jump.mp3.meta
+Assets/Images/coin_gold_02.png
+Assets/Images/coin_gold_02.png.meta
+Assets/Images/keyboard_e_white.png
+Assets/Images/keyboard_e_white.png.meta
+Assets/Images/keyboard_i_white.png
+Assets/Images/keyboard_i_white.png.meta
+Assets/Images/keyboard_k_white.png
+Assets/Images/keyboard_k_white.png.meta
+Assets/Images/keyboard_o_white.png
+Assets/Images/keyboard_o_white.png.meta
+Assets/Images/keyboard_q_white.png
+Assets/Images/keyboard_q_white.png.meta
+Assets/Images/keyboard_s_white.png
+Assets/Images/keyboard_s_white.png.meta
+Assets/Images/keyboard_u_white.png
+Assets/Images/keyboard_u_white.png.meta
+Assets/Images/keyboard_w_white.png
+Assets/Images/keyboard_w_white.png.meta
+Assets/Images/yajirushi_bottom.png
+Assets/Images/yajirushi_bottom.png.meta
+Assets/Images/yajirushi_top.png
+Assets/Images/yajirushi_top.png.meta
+Assets/Script/InGameBGM.cs
+Assets/Script/InGameBGM.cs.meta
+Assets/Font.meta
+Assets/Sounde.meta
+Assets/Font/BestTen-CRT.otf
+Assets/Font/BestTen-CRT.otf.meta
+Assets/Font/BestTen-DOT.otf
+Assets/Font/BestTen-DOT.otf.meta

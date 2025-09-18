@@ -5,38 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class GameOverSceneManager : MonoBehaviour
 {
-	bool _isReady1P = false;
-	bool _isReady2P = false;
+	[SerializeField] float _nonActionTime = 10f;
+	float _timer;
 
 	void Update()
 	{
-		// 1Pのキー入力チェック（AまたはDキー）
-		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
-		{
-			_isReady1P = true;
-			Debug.Log("1P Ready!");
-		}
+		_timer += Time.deltaTime;
 
-		// 2Pのキー入力チェック（JまたはLキー）
-		if (Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.L))
+		// 両方がSとKを押した場合のみゲーム開始
+		if (Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.K))
 		{
-			_isReady2P = true;
-			Debug.Log("2P Ready!");
+			SceneManager.LoadScene(1);
 		}
-
-		// 両プレイヤーが準備完了したかチェック
-		if (_isReady1P && _isReady2P)
+		// SpaceかタイムオーバーならTitleへ
+		else if(Input.GetKey(KeyCode.Space) || _timer > _nonActionTime)
 		{
-			// 両方がAとJを押した場合のみゲーム開始
-			if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.J))
-			{
-				SceneManager.LoadScene(1);
-			}
-			else
-			{
-				// それ以外の組み合わせならタイトルに戻る
-				SceneManager.LoadScene(0);
-			}
+			SceneManager.LoadScene(0);
 		}
 	}
 }
