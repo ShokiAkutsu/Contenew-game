@@ -26,11 +26,11 @@ public class InputMove
 
 		if (Input.GetKey(GetLeftKey(player)))
 		{
-			axis -= 1f;
+			axis = -1f;
 		}
 		else if (Input.GetKey(GetRightKey(player))) 
 		{
-			axis += 1f;
+			axis = 1f;
 		}
 
 		return axis;
