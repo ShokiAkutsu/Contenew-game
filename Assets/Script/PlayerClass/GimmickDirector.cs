@@ -7,6 +7,7 @@ public class GimmickDirector : MonoBehaviour
 	PlayerDeadManager _dead;
 	PlayerIDIdentity _id;
 	[SerializeField] bool _gotMode = false;
+	bool _isPause = false;
 	[SerializeField] float _gotTime = 3f;
 	float _timer = -1; // デバッグ用初期値
 
@@ -16,9 +17,21 @@ public class GimmickDirector : MonoBehaviour
 		_id = GetComponent<PlayerIDIdentity>();
 	}
 
+	private void OnEnable()
+	{
+		PauseManager.OnPause += Pause;
+		PauseManager.OnResume += Resume;
+	}
+
+	private void OnDisable()
+	{
+		PauseManager.OnPause -= Pause;
+		PauseManager.OnResume -= Resume;
+	}
+
 	private void Update()
 	{
-		if (_gotMode && _timer != -1)
+		if (!_isPause && _gotMode)
 		{
 			_timer += Time.deltaTime;
 
@@ -38,5 +51,17 @@ public class GimmickDirector : MonoBehaviour
 			Debug.Log("障害物と当たりました");
 			StartCoroutine(_dead.IsContinue(_id.PlayerID));
 		}
+	}
+
+	// コンテニュー中の当たり判定の無効化
+	private void Pause()
+	{
+		_isPause = true;
+	}
+
+	void Resume()
+	{
+		_isPause = false;
+		_timer = 0;
 	}
 }

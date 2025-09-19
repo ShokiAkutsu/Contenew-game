@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallet:
-    _coins: 10
+    _coins: 5
   _clip: {fileID: 8300000, guid: b9334b404d49c5f45b163d638f3cdd5f, type: 3}
 --- !u!114 &159838350
 MonoBehaviour:
@@ -2291,7 +2291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallet:
-    _coins: 10
+    _coins: 5
   _clip: {fileID: 8300000, guid: b9334b404d49c5f45b163d638f3cdd5f, type: 3}
 --- !u!114 &752108446
 MonoBehaviour:
