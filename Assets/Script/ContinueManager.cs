@@ -21,11 +21,18 @@ public class ContinueManager : MonoBehaviour
 	PlayerWalletManager _wallet;
 	PlayerIDManager _playerManager;
 	GameOverEffect _gameOverEffect;
+	AudioSource _audio;
+	[SerializeField] AudioClip _deadClip;
+	[SerializeField] AudioClip _conteClip;
+	[SerializeField] AudioClip _downClip;
+	[SerializeField] AudioClip _upClip;
+	[SerializeField] AudioClip _decisionClip;
 
 	private void Start()
 	{
 		_playerManager = GameObject.FindObjectOfType<PlayerIDManager>();
 		_gameOverEffect = GameObject.FindObjectOfType<GameOverEffect>();
+		_audio = GetComponent<AudioSource>();
 		_canvas.gameObject.SetActive(false);
 	}
 
@@ -53,16 +60,18 @@ public class ContinueManager : MonoBehaviour
 		{
 			PlayerID target = player == PlayerID.Player_1P ? PlayerID.Player_2P : PlayerID.Player_1P;
 			Vector3 targetPos = _playerManager.GetPlayerPosition(target);
-			//シーン変えるか
-			_gameOverEffect.StartEffect(targetPos, target);
-		}
 
-		//所持金が減ったことが分かるエフェクトを出したい
+			yield return new WaitForSeconds(0.5f);
+
+			_audio.PlayOneShot(_deadClip);
+			_gameOverEffect.StartEffect(targetPos, target); // シーン変更とエフェクト
+		}
 	}
 
 	private IEnumerator ContinueProcess(int maxCost, int minCost)
 	{
 		_isDecision = false;
+		_audio.PlayOneShot(_conteClip);
 
 		//UIの表示
 		_canvas.gameObject.SetActive(true);
@@ -101,14 +110,17 @@ public class ContinueManager : MonoBehaviour
 		if (Input.GetKeyDown(InputMove.GetLeftKey(_activePlayer)))
 		{
 			_payValue--;
+			_audio.PlayOneShot(_downClip);
 		}
 		if (Input.GetKeyDown(InputMove.GetRightKey(_activePlayer)))
 		{
 			_payValue++;
+			_audio.PlayOneShot(_upClip);
 		}
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
 			_isDecision = true;
+			_audio.PlayOneShot(_decisionClip);
 		}
 
 		yield return null;

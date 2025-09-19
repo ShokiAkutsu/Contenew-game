@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3687422332747074436}
-  - component: {fileID: 3016667838580258438}
-  - component: {fileID: 8420284931788320668}
+  - component: {fileID: 6513000533796394690}
+  - component: {fileID: -2684054301734495098}
   m_Layer: 0
-  m_Name: Skill_Traking
+  m_Name: Skill_Wow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3016667838580258438
+--- !u!114 &6513000533796394690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,12 +42,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 9168238659030883124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f974929a1e0b6f84bbf720ea692bb012, type: 3}
+  m_Script: {fileID: 11500000, guid: 317093f00363caf48ae97a09e22b6ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _traking: {fileID: 8584805250470701024, guid: 926b4aa5bd2a59448a70d3e783a93552, type: 3}
-  _position: {x: 0, y: -7, z: 0}
---- !u!82 &8420284931788320668
+  _ghost:
+  - {fileID: 432926177383621723, guid: 54874448bafafd64d9a7746e9fe811bb, type: 3}
+  - {fileID: 243174893862496962, guid: bccaef6d06c8fb14c8a2cb406ef6d193, type: 3}
+  - {fileID: 8459316203155151903, guid: 085dd96d95ed98d40a1ea28cb4fd68ae, type: 3}
+--- !u!82 &-2684054301734495098
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +59,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 141a3400170113f42b4bae8318647b5f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c6659d16dd6608c4abfecffbf16d896c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

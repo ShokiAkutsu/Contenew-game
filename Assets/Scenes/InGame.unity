@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallet:
-    _coins: 0
+    _coins: 10
   _clip: {fileID: 8300000, guid: b9334b404d49c5f45b163d638f3cdd5f, type: 3}
 --- !u!114 &159838350
 MonoBehaviour:
@@ -860,9 +860,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _deck:
   - {fileID: 11400000, guid: 50a6321cc4b49814aa41d3345bb0e72c, type: 2}
-  - {fileID: 11400000, guid: 6fe00b02242cc404883eb630c681b0ae, type: 2}
   - {fileID: 11400000, guid: 7c46c4e566e086c4ea05011788ce4845, type: 2}
   - {fileID: 11400000, guid: e28f5f18f3c89cc4f85fc42885c3e4fd, type: 2}
+  - {fileID: 11400000, guid: 6fe00b02242cc404883eb630c681b0ae, type: 2}
+  - {fileID: 11400000, guid: 6fe00b02242cc404883eb630c681b0ae, type: 2}
+  - {fileID: 11400000, guid: d73da41bfeac53b4c8610ad565cc4899, type: 2}
+  - {fileID: 11400000, guid: d73da41bfeac53b4c8610ad565cc4899, type: 2}
+  - {fileID: 11400000, guid: d73da41bfeac53b4c8610ad565cc4899, type: 2}
   - {fileID: 11400000, guid: f4213a9b44f8a804d9ed0af442637479, type: 2}
 --- !u!4 &398166156
 Transform:
@@ -1163,6 +1167,7 @@ GameObject:
   - component: {fileID: 490720427}
   - component: {fileID: 490720429}
   - component: {fileID: 490720428}
+  - component: {fileID: 490720430}
   m_Layer: 0
   m_Name: UIM
   m_TagString: Untagged
@@ -1178,12 +1183,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490720426}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1942216389}
+  m_Father: {fileID: 491639302}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &490720428
 MonoBehaviour:
@@ -1216,6 +1221,107 @@ MonoBehaviour:
   _canvas: {fileID: 1864515673}
   _minCost: {fileID: 1874662051}
   _payCost: {fileID: 1414300612}
+  _deadClip: {fileID: 8300000, guid: 4ed9198504bd7bb46a6ebf40700116b3, type: 3}
+  _conteClip: {fileID: 8300000, guid: d60513a86d6558843a7da47afce8bf41, type: 3}
+  _downClip: {fileID: 8300000, guid: 491f164cdd76f434ba4362c38f38e8ba, type: 3}
+  _upClip: {fileID: 8300000, guid: 4168394e0a2686145a8e74be055a6a74, type: 3}
+  _decisionClip: {fileID: 8300000, guid: 17122e35e6a55214da50ab690236a6aa, type: 3}
+--- !u!82 &490720430
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490720426}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ed9198504bd7bb46a6ebf40700116b3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &491639301
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1352,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 490720427}
   m_Father: {fileID: 1942216389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &491639303
@@ -2184,7 +2291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _wallet:
-    _coins: 0
+    _coins: 10
   _clip: {fileID: 8300000, guid: b9334b404d49c5f45b163d638f3cdd5f, type: 3}
 --- !u!114 &752108446
 MonoBehaviour:
@@ -3856,7 +3963,7 @@ GameObject:
   - component: {fileID: 1600133157}
   - component: {fileID: 1600133156}
   m_Layer: 0
-  m_Name: underwater1
+  m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4754,7 +4861,6 @@ Transform:
   - {fileID: 491639302}
   - {fileID: 1459942281}
   - {fileID: 472962909}
-  - {fileID: 490720427}
   - {fileID: 1182896214}
   - {fileID: 2108229455}
   m_Father: {fileID: 0}
